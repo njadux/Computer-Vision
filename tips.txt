@@ -1,0 +1,14 @@
+if you want to resize the window and image 
+
+
+#resize window
+desired_width = 640
+height = 600
+cv2.resizeWindow("Image", desired_width, height)
+
+#Use pre-trained model loaded from line Haarcascade_frontalface_defualt.xml
+(window size is increased by 10%,
+minNeighbors = 4 is minimum number of times a specific pattern needs to be detected within a window to be considered a face) 
+4 provides a balance between accuracy and speed. 
+then define the rectangle color and thickness'''
+>> model.detectMultiScale
