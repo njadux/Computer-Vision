@@ -1,0 +1,38 @@
+Download and import TensorFlow, numpy, and matplotlib.
+
+1. Dataset: is included in Tensorflow/Keras
+
+Fashion MNIST Dataset: A standard dataset for image classification tasks.
+Data Preprocessing:
+Loading and splitting the dataset into training and testing sets  using load_data.
+Normalizing the pixel values to a suitable range (e.g., 0-1).
+
+
+2. Model Architecture:
+
+Convolutional Neural Network (CNN): A suitable architecture for image classification tasks.
+Model Layers:
+Convolutional layers to extract features from the images.
+Activation functions (ReLU) to introduce non-linearity.
+Pooling layers to reduce dimensionality and computational cost.
+Flatten layer to convert the 2D feature maps into a 1D array.
+Dense layers for classification - must be the same number as the fashion clusters numbers.
+
+
+3. Training Process:
+
+Loss Function: Categorical cross-entropy loss to measure the difference between predicted and true labels.
+Optimizer: Adam optimizer to update the model's weights.
+Early Stopping: Implement a custom callback to monitor validation accuracy and stop training when it reaches a certain threshold or starts to degrade (to prevent overfitting).
+Model Training: Train the model on the training set, using the specified loss function and optimizer.
+Model Evaluation: Evaluate the trained model on the testing set to assess its performance.
+
+
+4. Model Evaluation:
+
+Accuracy: Calculate the percentage of correctly classified images.
+# Convert predictions to discrete class labels using argmax
+# prediction is a matrix of shape (num_samples, num_classes)
+# argmax along axis 1 gives the index of the highest probability for each sample
+Confusion Matrix: Visualize the model's performance by showing the number of true positive, true negative, false positive, and false negative predictions.   
+Classification Report: Provide a detailed report with precision, recall, F1-score, and support for each class.
