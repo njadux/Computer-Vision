@@ -1,0 +1,4 @@
+pytesseract==0.3.10
+Pillow==9.4.0
+google-colab
+Tesseract OCR is a system dependency, so it’s required to install Tesseract through a package manager
